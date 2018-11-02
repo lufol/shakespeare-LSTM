@@ -57,4 +57,4 @@ class GenerativeNetwork:
         return pattern
     
 gn = GenerativeNetwork(corpus_path="../sonnets.txt", model_path="/content/shakespeare-LSTM/network/model.yaml", weights_path="/content/shakespeare-LSTM/network/weights-03-1.999.hdf5")
-gn.generate(gn.make_seed())
+print(gn.generate(gn.make_seed()))
